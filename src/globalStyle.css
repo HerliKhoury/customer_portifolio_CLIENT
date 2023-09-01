@@ -1,0 +1,82 @@
+:root{
+    --color_white: #FFFFFF;
+    --color_brand: #D6336C;
+    --color_brand1: #C2255C;
+    --color_error: #fe0059;
+    --color_gray_scale1: #212529;
+    --color_gray_scale2: rgba(255, 255, 255, 0.6);
+    --color_gray_scale3: rgba(255, 255, 255, 0.12); 
+
+    --font-size20: 20px;
+    --font-size14: 14px;
+    --font-size12: 12px;
+
+    --weight-semi_bold: 600;
+    --weight-regular: 400;
+
+    --font-family: Inter, sans-serif;
+}
+
+input{
+    background-color: var(--color_input_bg);
+    height: 39.39px;
+    width: 100%;
+    border: 1px solid var(--color_gray_scale3);
+    color: var(--color_gray_scale2);
+    text-indent: 20px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.error{
+    font-size: var(--font-size12);
+    color: var(--color_error);
+    padding-left: 20px;
+    margin-top: -10px;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, b, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

@@ -1,0 +1,31 @@
+.contain-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 30px;
+}
+
+.form-title{
+    color: var(--color_white);
+    font-size: var(--font-size20);
+    font-family: var(--font-family);
+    font-weight: var(--weight-regular);
+    text-align: center;
+}
+
+.form-btns{
+    width: 100%;
+    height: 39.39px;
+    color: var(--color_white);
+    font-family: var(--font-family);
+    border-radius: 4px;
+    border: 1px solid var(--color_white);
+    font-size: var(--font-size14);
+    font-weight: var(--weight-regular);
+    background-color: var(--color_gray_scale1);
+}
+
+.form-btns:hover{
+    background-color: var(--color_brand);
+    border: none;
+}

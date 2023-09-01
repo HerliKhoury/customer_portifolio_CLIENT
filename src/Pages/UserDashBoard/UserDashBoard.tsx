@@ -5,7 +5,7 @@ export function UserDashBoard(){
 
     return(
         <>
-        <CustomerModal/>
+            <CustomerModal/>
             <Headder/>
             <p>Página do usuário</p>
         </>

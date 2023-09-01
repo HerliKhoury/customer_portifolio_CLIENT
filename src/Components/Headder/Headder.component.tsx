@@ -6,14 +6,14 @@ export function Headder(){
 
     return(
         <>
-        <div>
-            <p>Lord Dain</p>
-            <p>(62) 98762-8293</p>
-        </div>
-        <div>
-            <button>Logout</button>
-            <button onClick={toggleFlag}>Register Customer</button>
-        </div>
+            <div>
+                <p>Lord Dain</p>
+                <p>(62) 98762-8293</p>
+            </div>
+            <div>
+                <button>Logout</button>
+                <button onClick={toggleFlag}>Register Customer</button>
+            </div>
         </>
     )
 };

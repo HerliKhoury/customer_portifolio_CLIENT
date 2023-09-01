@@ -6,7 +6,7 @@ export function MyRoutes(){
     return(
         <Routes>
             <Route path="/" element={<LoginRegister/>}/>
-            <Route path="/userDashBoard" element={<UserDashBoard/>}/>
+            <Route path="/dashboard" element={<UserDashBoard/>}/>
         </Routes>
     )
 }
