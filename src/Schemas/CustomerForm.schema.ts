@@ -14,3 +14,11 @@ export const CustomerSchema = yup.object().shape({
         return true; 
     })
 });
+
+export const CustomerSchemaRes = yup.object({
+    id: yup.number(),
+    full_name: yup.string(),
+    email: yup.string(),
+    phone_number: yup.string(),
+    created_at: yup.string(), 
+})
