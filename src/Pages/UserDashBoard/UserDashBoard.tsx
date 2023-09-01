@@ -4,10 +4,12 @@ import { CustomerModal } from "../../Components/Modals/CreateCustomer.modal";
 export function UserDashBoard(){
 
     return(
-        <>
+        <div className="wrap-dashboard">
             <CustomerModal/>
-            <Headder/>
-            <p>Página do usuário</p>
-        </>
+            <div className="container">
+                <Headder/>
+                <p>Página do usuário</p>
+            </div>
+        </div>
     )
 };

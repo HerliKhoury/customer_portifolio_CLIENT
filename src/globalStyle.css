@@ -6,11 +6,15 @@
     --color_gray_scale1: #212529;
     --color_gray_scale2: rgba(255, 255, 255, 0.6);
     --color_gray_scale3: rgba(255, 255, 255, 0.12); 
+    --color_gray_scale4: rgba(255, 255, 255, 0.5);
 
+    --font-size24: 24px;
     --font-size20: 20px;
+    --font-size16: 16px;
     --font-size14: 14px;
     --font-size12: 12px;
 
+    --weight-bold: 600;
     --weight-semi_bold: 600;
     --weight-regular: 400;
 

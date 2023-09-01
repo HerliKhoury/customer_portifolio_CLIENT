@@ -50,3 +50,15 @@
     text-align: center;
     margin-left: 50px;
 }
+
+.wrap-dashboard{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 1000px;
+    background-color: var(--color_gray_scale1);
+}
+
+.container{
+    margin: 0 400px;
+}
