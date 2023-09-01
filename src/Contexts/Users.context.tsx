@@ -1,22 +1,17 @@
 import { createContext, useState } from "react";
 import { CustomerProviderProps } from "../Interfaces/Customer.interfaces";
-import { Register, ReqRegisterData } from "../Interfaces/Register.interfaces";
+import { TDefaultProviderProps, TUserContext } from "../Interfaces/User.interfaces";
 
-export const UserContext = createContext({});
+export const UserContext = createContext({} as TUserContext);
 
-function UserProvider({children}: CustomerProviderProps){
-    const [userState, setUserState] = useState({});
-
-    /* async function registerUser(data: Register){
-        const reqRegisterData: ReqRegisterData = {
-            full_name: ,
-            email:,
-            phone_number:
-        }
-    } */
+function UserProvider({children}: TDefaultProviderProps){
+    const [userState, setUserState] = useState({
+        name: "",
+        phone: ""
+    });
 
     return(
-        <UserContext.Provider value={{}}>
+        <UserContext.Provider value={{userState, setUserState}}>
             {children}
         </UserContext.Provider>
     )
