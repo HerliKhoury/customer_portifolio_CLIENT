@@ -17,8 +17,15 @@ export class customerService {
         );
     }
 
-    static async catchCustomers(){
-        const response: TCustormerRes[]= await api.get("customer");
+    static async catchCustomers(userId: number){
+        let token = localStorage.getItem('Token');
+        const response: TCustormerRes[]= await api.get(`user/${userId}/customers`,
+            {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            }
+        );
 
         return response;
     }
@@ -37,8 +44,17 @@ export class customerService {
         );
     }
 
-    /* 
-    static async deleteCustomer(customerData: Customer){
+     
+    static async deleteCustomer(customerId: number){
         let token = localStorage.getItem('Token');
-    } */
+
+        await api.delete(
+            `property/${customerId}`,
+            {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            }
+        );
+    } 
 };
