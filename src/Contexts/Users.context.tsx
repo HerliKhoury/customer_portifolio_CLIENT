@@ -7,7 +7,7 @@ export const UserContext = createContext({} as TUserContext);
 function UserProvider({children}: TDefaultProviderProps){
     const [userState, setUserState] = useState({
         name: "",
-        phone: ""
+        phone_number: ""
     });
 
     return(

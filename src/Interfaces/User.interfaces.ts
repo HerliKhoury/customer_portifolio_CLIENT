@@ -5,7 +5,7 @@ export type TDefaultProviderProps = {
 
 export type TUserInfo = {
     name: string,
-    phone: string
+    phone_number: string
 }
 
 export type TUserReq = {
