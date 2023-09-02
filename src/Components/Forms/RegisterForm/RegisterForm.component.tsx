@@ -4,6 +4,9 @@ import { RegisterSchema } from "../../../Schemas/RegisterForm.schema";
 import { Register } from "../../../Interfaces/Register.interfaces";
 import { useContext } from "react";
 import { ModalContext } from "../../../Contexts/Modal.context";
+import { TUserReq } from "../../../Interfaces/User.interfaces";
+import { userService } from "../../../services/user.service";
+import { toast } from "react-toastify";
 
 export function RegisterForm(){
 
@@ -13,8 +16,21 @@ export function RegisterForm(){
         resolver: yupResolver(RegisterSchema)
     });
 
-    function onSubmitFunction(data: Register){
-        console.log(data);
+    async function onSubmitFunction(userData: Register){
+        const treatedData: TUserReq= {
+            full_name: userData.full_name,
+            email: userData.email,
+            password: userData.password,
+            phone_number: userData.phone_number
+        };
+
+        try{
+            await userService.createUser(treatedData);
+            toast.success("Usuário criado!");
+            toggleFlag();
+        } catch (err: any){
+            console.log(err);
+        }
     }    
 
     return (

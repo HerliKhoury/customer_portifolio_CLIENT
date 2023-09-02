@@ -4,7 +4,7 @@ import { TDefaultProviderProps, TUserContext } from "../Interfaces/User.interfac
 
 export const UserContext = createContext({} as TUserContext);
 
-function UserProvider({children}: TDefaultProviderProps){
+export const UserProvider = ({children}: TDefaultProviderProps) => {
     const [userState, setUserState] = useState({
         name: "",
         phone_number: ""

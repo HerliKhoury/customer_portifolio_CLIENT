@@ -11,7 +11,7 @@ export class loginService {
         let response: LoginRes = await api.post("login", loginData);
 
         localStorage.setItem("Token", response.token);
-        setUserState({name: response.name, phone: response.phone});
+        setUserState({name: response.name, phone_number: response.phone});
     };
     
 };

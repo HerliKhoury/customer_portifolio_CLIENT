@@ -19,7 +19,7 @@ export class customerService {
 
     static async catchCustomers(userId: number){
         let token = localStorage.getItem('Token');
-        const response: TCustormerRes[]= await api.get(`user/${userId}/customers`,
+        const response: TCustormerRes[]= await api.get(`user/${userId}/customer`,
             {
                 headers: {
                     Authorization: `Bearer ${token}`
@@ -49,7 +49,7 @@ export class customerService {
         let token = localStorage.getItem('Token');
 
         await api.delete(
-            `property/${customerId}`,
+            `customer/${customerId}`,
             {
                 headers: {
                     Authorization: `Bearer ${token}`
