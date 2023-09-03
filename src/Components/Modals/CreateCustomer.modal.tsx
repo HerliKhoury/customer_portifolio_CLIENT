@@ -14,9 +14,8 @@ export function CustomerModal(){
             overlayClassName="modal-overlay"
             className="modal-content"
         >
-            <button onClick={toggleFlag}>X</button>
+            <button  className="close-btn" onClick={toggleFlag}>X</button>
             <CustomerForm/>
-            <button onClick={toggleFlag}>Close</button>
         </Modal>
     );
 };
