@@ -16,9 +16,9 @@ export const CustomerSchema = yup.object().shape({
 });
 
 export const CustomerSchemaRes = yup.object({
-    id: yup.number(),
-    full_name: yup.string(),
-    email: yup.string(),
-    phone_number: yup.string(),
-    created_at: yup.string(), 
+    id: yup.number().required(),
+    full_name: yup.string().required(),
+    email: yup.string().required(),
+    phone_number: yup.string().required(),
+    created_at: yup.string().required(), 
 })

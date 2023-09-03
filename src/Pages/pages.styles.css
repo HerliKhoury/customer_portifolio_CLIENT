@@ -62,3 +62,14 @@
 .container{
     margin: 0 400px;
 }
+
+.wrap-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-height: 730px;
+    overflow-y: auto;
+    width: 100%;
+    padding-left: 0;
+}

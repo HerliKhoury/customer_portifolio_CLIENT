@@ -1,3 +1,4 @@
+import { AxiosResponse } from "axios";
 import { Customer, TCustomerUpdate, TCustormerRes } from "../Interfaces/Customer.interfaces";
 import { api } from "./api";
 
@@ -19,7 +20,7 @@ export class customerService {
 
     static async catchCustomers(userId: number){
         let token = localStorage.getItem('Token');
-        const response: TCustormerRes[]= await api.get(`user/${userId}/customer`,
+        const response: TCustormerRes[] = await api.get(`user/${userId}/customer`,
             {
                 headers: {
                     Authorization: `Bearer ${token}`
@@ -43,8 +44,7 @@ export class customerService {
             }
         );
     }
-
-     
+  
     static async deleteCustomer(customerId: number){
         let token = localStorage.getItem('Token');
 
@@ -57,4 +57,16 @@ export class customerService {
             }
         );
     } 
+
+    static async catchUserCustomers(){
+        let token = localStorage.getItem('Token');
+
+        const response: AxiosResponse<TCustormerRes[], any>= await api.get("customer",{
+            headers: {
+                Authorization: `Bearer ${token}`
+            }
+        })
+
+        return response;
+    }
 };

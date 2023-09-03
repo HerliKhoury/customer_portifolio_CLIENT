@@ -7,6 +7,7 @@
     --color_gray_scale2: rgba(255, 255, 255, 0.6);
     --color_gray_scale3: rgba(255, 255, 255, 0.12); 
     --color_gray_scale4: rgba(255, 255, 255, 0.5);
+    --color_gray_scale5: #373B3E;
 
     --font-size24: 24px;
     --font-size20: 20px;
@@ -14,8 +15,9 @@
     --font-size14: 14px;
     --font-size12: 12px;
 
-    --weight-bold: 600;
+    --weight-bold: 700;
     --weight-semi_bold: 600;
+    --weight-medium: 500;
     --weight-regular: 400;
 
     --font-family: Inter, sans-serif;

@@ -15,7 +15,7 @@ export type TUserReq = {
     phone_number: string
 }
 
-export type TUserContext = {
+/* export type TUserContext = {
     userState: TUserInfo,
     setUserState: React.Dispatch<React.SetStateAction<TUserInfo>>
-}
+} */

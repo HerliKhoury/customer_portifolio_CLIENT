@@ -19,3 +19,22 @@ export interface CustomerProviderProps{
 };
 
 export type TCustormerRes = InferType<typeof CustomerSchemaRes>
+
+export type TCustomerContext = {
+    refreshFlag: boolean,
+    toggleRefresh: () => void,
+    customerView: TCustormerRes[],
+    setCustomersView: React.Dispatch<React.SetStateAction<TCustormerRes[]>>
+    
+}
+
+export type TDefaultProviderProps = {
+    children: React.ReactNode;
+};
+
+export type TCusotomerCardProps = {
+    customerId: number;
+    customerName: string;
+    customerEmail: string;
+    customerPhone: string; 
+}

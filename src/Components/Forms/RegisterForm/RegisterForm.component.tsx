@@ -7,6 +7,7 @@ import { ModalContext } from "../../../Contexts/Modal.context";
 import { TUserReq } from "../../../Interfaces/User.interfaces";
 import { userService } from "../../../services/user.service";
 import { toast } from "react-toastify";
+import { UserContext } from "../../../Contexts/Users.context";
 
 export function RegisterForm(){
 
