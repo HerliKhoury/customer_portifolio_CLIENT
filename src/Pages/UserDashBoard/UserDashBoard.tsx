@@ -16,7 +16,6 @@ export function UserDashBoard(){
         async function loadCustomers(){
             try{
                 let customersArr = await customerService.catchUserCustomers();
-                console.log("oia", customersArr.data)
                 if(!!customersArr) setCustomersView(customersArr.data);
             }catch(err: any){
                 toast.error("Erro ao acessar base de dados!")
