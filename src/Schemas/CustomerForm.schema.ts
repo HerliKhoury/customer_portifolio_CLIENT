@@ -13,3 +13,9 @@ export const CustomerSchemaRes = yup.object({
     phone_number: yup.string().required(),
     created_at: yup.string().required(), 
 })
+
+export const CustomerSchemaUpdate = yup.object().shape({
+    full_name: yup.string(),
+    email: yup.string(),
+    phone_number: yup.string()
+});

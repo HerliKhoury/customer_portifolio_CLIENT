@@ -6,6 +6,7 @@ import { customerService } from "../../services/customer.service";
 import { CustomerContext } from "../../Contexts/Customers.context";
 import { NoCustomer } from "../../Components/NoCustomer/NoCustomer.component";
 import { CustomerCard } from "../../Components/CustomerCard/CustomerCard.component";
+import { EditCustomerModal } from "../../Components/Modals/EditCustomer.modal";
 
 export function UserDashBoard(){
 
@@ -28,6 +29,7 @@ export function UserDashBoard(){
     return(
         <div className="wrap-dashboard">
             <CustomerModal/>
+            <EditCustomerModal/>
             <div className="container">
                 <Headder/>
                 {
